@@ -19,6 +19,12 @@ public class Student {
         this.age = age;
     }
 
+    public Student(){
+        this.id = 0;
+        this.name = null;
+        this.age = 0;
+    }
+
     /*Getters and setters*/
     public void setId(int id) {
         this.id = id;
@@ -50,5 +56,9 @@ public class Student {
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    public int compareTo(Student student) {
+        return this.name.compareTo(student.getName());
     }
 }
