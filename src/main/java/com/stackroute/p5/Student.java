@@ -1,3 +1,8 @@
+/**
+ * This contains a class of student with its private variables and getters and setters
+ */
+package com.stackroute.p5;
+
 public class Student {
     private int id;
     private String name;
@@ -7,12 +12,14 @@ public class Student {
         return id;
     }
 
+    /*Parameterized Constructer*/
     public Student(int id, String name, int age) {
         this.id = id;
         this.name = name;
         this.age = age;
     }
 
+    /*Getters and setters*/
     public void setId(int id) {
         this.id = id;
     }
@@ -35,9 +42,10 @@ public class Student {
         }
     }
 
+    /* Overridden toString method*/
     @Override
     public String toString() {
-        return "Student{" +
+        return "com.stackroute.p5.Student{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
