@@ -7,7 +7,7 @@ package com.stackroute.p5;
 import java.util.HashMap;
 import java.util.Map;
 
-public class WordCount {
+public class   WordCount {
 
     /*Method to count the alphabetic strings*/
     public Map<String,Integer> wordCount(String str) {
